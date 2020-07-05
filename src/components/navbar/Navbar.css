@@ -1,0 +1,47 @@
+.right-border{
+    border-right: 1px solid black;
+}
+p a:hover{
+    text-decoration: none;
+    color: #AF9119;
+}
+
+.active{
+    color: #AF9119;
+}
+
+p a{
+    color: black;
+}
+
+.Img{
+    width: 20vw;
+}
+
+.container-img-search{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-slogan-search{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.slogan-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.m-circle{
+    border-radius: 50%;
+}
