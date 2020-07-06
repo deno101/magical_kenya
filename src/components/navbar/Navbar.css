@@ -15,7 +15,7 @@ p a{
 }
 
 .Img{
-    width: 20vw;
+    width: 17vw;
 }
 
 .container-img-search{
@@ -44,4 +44,19 @@ p a{
 
 .m-circle{
     border-radius: 50%;
+}
+
+.m-circle i{
+    width: 30px;
+    text-align: center;
+}
+
+.flag{
+    display: flex;
+    height: 5px;
+}
+
+.flag div{
+    height: 100%;
+    width :33.33%
 }

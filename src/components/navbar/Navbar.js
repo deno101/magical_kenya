@@ -8,6 +8,7 @@ class Navbar extends Component {
             // main container all
             <div>
                 {/* continer img, search, icons, alt-links, slogan */}
+                <Flag />
                 <div className="container-img-search" >
                     {/* image container */}
                     <div className=" m-2 ml-5" > <Img /> </div>
@@ -41,7 +42,7 @@ function SloganLinks() {
     return (
         <div className="slogan-links m-2">
             {/* slogan */}
-            <div className="mr-4" style={{ color: '#AF9119', fontStyle:"italic" }} >The Kenya Tourism Board welcomes you to Magical Kenya!</div>
+            <div className="mr-4" style={{ color: '#AF9119', fontStyle: "italic" }} >The Kenya Tourism Board welcomes you to Magical Kenya!</div>
             {/* link */}
             <div >
                 <p>
@@ -55,33 +56,41 @@ function SloganLinks() {
 }
 
 function Socials() {
+
+    function Link() {
+        let data = [
+            {key:1, link: "http://www.facebook.com", background_color: "#0C69A8", icon: "fa-facebook" },
+            {key:2, link: "http://www.youtube.com", background_color: "#0FABC3", icon: "fa-twitter" },
+            {key:3, link: "http://www.youtube.com", background_color: "#D21C1C", icon: "fa-youtube" },
+            {key:4, link: "http://www.instagram.com", background_color: "#507EA3", icon: "fa-instagram" },
+            {key:5, link: "http://www.flickr.com", background_color: "#1F6ED9", icon: "fa-flickr" },
+        ]
+        return (
+            <React.Fragment>
+                {data.map(link => (
+                    <a className="mr-2" href={link.link} key={link.key}>
+                        <div className="m-circle white" style={{ background: link.background_color, color: 'white' }} >
+                            <i className={`fa ${link.icon} p-2`}></i>
+                        </div>
+                    </a>
+                ))}
+            </React.Fragment>
+        );
+    }
     return (
-        <div className="socials" >
-            <a className="mr-2" href="http://www.facebook.com" style={{marginLeft: 'auto'}} >
-                <div className="m-circle white"  style={{background: '#0C69A8', color:'white'}} >
-                    <i className="fa fa-facebook p-3 "></i>
-                </div>
-            </a>
-            <a className="mr-2" href="http://www.twitter.com">
-                <div  className="m-circle"  style={{background: '#0FABC3', color:'white'}}>
-                    <i className="fa fa-twitter p-3 "></i>
-                </div>
-            </a>
-            <a className="mr-2" href="http://www.youtube.com">
-                <div className="m-circle" style={{background: '#D21C1C', color:'white'}}>
-                    <i className="fa fa-youtube p-3"></i>
-                </div>
-            </a>
-            <a className="mr-2" href="http://www.instagram.com">
-                <div className="m-circle" style={{background: '#507EA3', color:'white'}} >
-                    <i className="fa fa-instagram p-3"></i>
-                </div>
-            </a>
-            <a className="" href="http://www.flickr.com">
-                <div className="m-circle" style={{background: '#1F6ED9', color:'white'}}>
-                    <i className="fa fa-flickr p-3"></i>
-                </div>
-            </a>
+        <div className="socials" style={{ marginLeft: 'auto' }} >
+            <Link />
+        </div>
+    );
+}
+
+function Flag(){
+    let colors = ["red", "black", "green"];
+    return (
+        <div className="flag" >
+            {colors.map(color => (
+                <div style={{background: color}}> &nbsp;</div>
+            ))}
         </div>
     );
 }
