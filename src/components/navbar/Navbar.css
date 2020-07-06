@@ -12,6 +12,7 @@ p a:hover{
 
 p a{
     color: black;
+    font-size: 12px;
 }
 
 .Img{
@@ -47,7 +48,7 @@ p a{
 }
 
 .m-circle i{
-    width: 30px;
+    width: 45px;
     text-align: center;
 }
 
@@ -59,4 +60,38 @@ p a{
 .flag div{
     height: 100%;
     width :33.33%
+}
+
+.searchbar{
+    width: 80%;
+    display: flex;
+    color: gray;
+    /* margin-left: auto; */
+    align-self: center;
+}
+
+.searchbar input{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid gray;
+    padding: .5rem;
+}
+
+.searchbar i{
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid gray;
+    padding: 5px;  
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    color:black;
+}
+
+.slogan_nd_socials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
