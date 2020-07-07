@@ -12,11 +12,11 @@ p a:hover{
 
 p a{
     color: black;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .Img{
-    width: 17vw;
+    width: 12vw;
 }
 
 .container-img-search{
@@ -66,7 +66,6 @@ p a{
     width: 80%;
     display: flex;
     color: gray;
-    /* margin-left: auto; */
     align-self: center;
 }
 
@@ -88,6 +87,7 @@ p a{
     border-left: 0;
     border-radius: 0 10px 10px 0;
     color:black;
+    cursor: pointer;
 }
 
 .slogan_nd_socials{
@@ -95,3 +95,45 @@ p a{
     flex-direction: row;
     flex-wrap: wrap;
 }
+.m-nv-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.m-nv-menuitem{
+    display: block;
+}
+.m-nv-menuitem a{
+    color: #2D2D2D;;
+}
+.m-nv-menuitem a:hover{
+    text-decoration: none;
+}
+
+.m-nv-bottom-of-menu{
+    height: 5px;
+    background:#2D2D2D;
+    display: none;
+}
+
+.m-nv-submenu{
+    display: none;
+    position: absolute;
+    background: #2D2D2D;
+}
+
+.m-nv-menuitem:hover  div{
+    display: block;
+}
+
+.m-nv-submenuitem-bordertop{
+    border-top: .5px solid gray;
+}
+
+.m-nv-submenuitem a{
+    color: white;
+    font-size: 16px;
+}
+
