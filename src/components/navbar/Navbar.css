@@ -116,25 +116,24 @@ p a{
     height: 5px;
     background:#2D2D2D;
     opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
+    transition: opacity 0.4s linear , visibility 0s linear;
+    transition-delay: 0ms;
+    visibility: hidden;
 }
 
 .m-nv-submenu{
     opacity: 0;
+    visibility: hidden;
     position: absolute;
     background: #2D2D2D;
-    transition-property: opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: opacity 0.4s linear 0s, visibility 0s linear;
     transition-delay: 0s;
     border-radius: 0 0 5px 5px;
 }
 
 .m-nv-menuitem:hover  div{
     opacity: 1;
+    visibility: visible;
 }
 
 .m-nv-submenuitem-bordertop{
