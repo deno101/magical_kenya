@@ -133,6 +133,14 @@ p a{
     width: 250px;
 }
 
+.m-nv-submenu div:hover{
+    background-color: #8B5C00;
+}
+
+.m-nv-submenu div{
+    transition: background-color 300ms linear 0s;
+}
+
 .m-nv-menuitem:hover  div{
     opacity: 1;
     visibility: visible;
