@@ -129,6 +129,8 @@ p a{
     transition: opacity 0.4s linear 0s, visibility 0s linear;
     transition-delay: 0s;
     border-radius: 0 0 5px 5px;
+    z-index: 999;
+    width: 250px;
 }
 
 .m-nv-menuitem:hover  div{

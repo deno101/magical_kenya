@@ -192,7 +192,7 @@ function Menus() {
         <React.Fragment>
             {menu_data.map(((row, index) => (
 
-                <div className={`m-2 m-nv-menuitem ${index === 0 && 'ml-auto'}`}>
+                <div className={`m-2 m-nv-menuitem ${index === 0 && 'ml-auto'}`} key={index}>
                     <a href={row.href}>
                         {row.name}
                         <i className="fa fa-chevron-down m-1" style={{ color: 'red' }}></i>
@@ -203,7 +203,7 @@ function Menus() {
                     <div>
                         <div className="m-nv-submenu">
                             {row.children.map((child, index) => (
-                                <div className={`m-nv-submenuitem pl-3 pr-3 pt-2 pb-2 ${index !== 0 && 'm-nv-submenuitem-bordertop'}`}>
+                                <div className={`m-nv-submenuitem pl-3 pr-3 pt-2 pb-2 ${index !== 0 && 'm-nv-submenuitem-bordertop'}`} key={index}>
                                     <a href={child.href} >
                                         {child.name}
                                     </a>

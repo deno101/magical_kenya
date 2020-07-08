@@ -1,0 +1,48 @@
+.carousel-image{
+    position: absolute;
+}
+
+.carousel-image-inner img{
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-image-content{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    opacity: .6;
+    flex-direction: column;
+}
+
+.carousel-image-content div{
+    margin-left: auto;
+    color: white;
+}
+
+.carousel-previous{
+    top: 0;
+    left: 0;
+}
+
+.carousel-next, .carousel-previous{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel-next i , .carousel-previous i{
+    color: white;
+    background: black;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.carousel-next{
+    bottom: 0;
+    right: 0;
+}
