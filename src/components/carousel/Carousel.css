@@ -1,5 +1,6 @@
 .carousel-image{
     position: absolute;
+    transition: opacity 1.5s linear 0s;
 }
 
 .carousel-image-inner img{
@@ -23,16 +24,13 @@
 }
 
 .carousel-previous{
-    top: 0;
     left: 0;
+    bottom: 0;
 }
 
 .carousel-next, .carousel-previous{
     position: absolute;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
+    display: block;
 }
 
 .carousel-next i , .carousel-previous i{
@@ -43,6 +41,22 @@
 }
 
 .carousel-next{
-    bottom: 0;
     right: 0;
+    bottom: 0;
+}
+
+.carousel-image-container{
+    position: absolute;
+    width: 100%;
+}
+
+.carousel-image-content-title{
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+.carousel-image-content-message{
+    font-size: 16px;
+    font-style: italic;
 }
