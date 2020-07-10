@@ -60,12 +60,23 @@ function Imgs() {
     return (
         <React.Fragment>
             <div className="carousel-image-container">
+
                 {images.map((image, index) => (
-                    <div key={index} className='carousel-image' style={{ opacity: (index === 0) ? '1' : '0' }}>
+                    <div key={index} className='carousel-image' style={{ opacity: (index === 0) ? '1' : '0', position: index === images.length - 1 ? "relative" : "absolute" }}>
                         <div className="carousel-image-inner">
                             <img src={`${process.env.PUBLIC_URL}/imgs/${image.src}`} alt={index} />
                         </div>
-                        {console.log(image.subcontent)}
+
+                            <React.Fragment>
+                                <div className="carousel-previous" id="carousel-prev-btn">
+                                    <i className="fa fa-chevron-left p-2 p-2 pt-3 pb-3 fa-2x" />
+                                </div>
+
+                                <div className="carousel-next" id="carousel-next-btn">
+                                    <i className="fa fa-chevron-right p-2 pt-3 pb-3 fa-2x" />
+                                </div>
+                            </React.Fragment>
+
                         {image.subcontent.map((data, index) => (
                             <div className="carousel-image-content pr-3" key={index}>
                                 <div className="carousel-image-content-title m-2 ml-auto">
@@ -79,13 +90,9 @@ function Imgs() {
                     </div>
                 ))}
 
+
             </div>
-            <div className="carousel-previous" id="carousel-prev-btn">
-                <i className="fa fa-chevron-left p-2 p-2 pt-3 pb-3 fa-2x" />
-            </div>
-            <div className="carousel-next" id="carousel-next-btn">
-                <i className="fa fa-chevron-right p-2 pt-3 pb-3 fa-2x" />
-            </div>
+
         </React.Fragment>
     );
 }

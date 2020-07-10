@@ -3,8 +3,9 @@ export function setTimer() {
     var timer, numofSlides, currentslideindex = 0;
 
     let slides = document.getElementsByClassName('carousel-image');
-    let next_btn = document.getElementById("carousel-next-btn")
-    let prev_btn = document.getElementById("carousel-prev-btn")
+    let next_btn = document.getElementsByClassName("carousel-next")
+    let prev_btn = document.getElementsByClassName("carousel-previous");
+
 
     numofSlides = slides.length
 
@@ -19,6 +20,7 @@ export function setTimer() {
 
         currentslideindex = nextindex;
     }
+
 
     function next() {
         clearTimeout(timer);
@@ -51,6 +53,7 @@ export function setTimer() {
     }
 
     timer = setInterval(slide, 5000);
-    prev_btn.addEventListener('click', prev);
-    next_btn.addEventListener('click', next);
+
+    Array.from(next_btn).forEach((element) => element.addEventListener('click', next));
+    Array.from(prev_btn).forEach((element) => element.addEventListener('click', prev));
 }

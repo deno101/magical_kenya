@@ -25,12 +25,14 @@
 
 .carousel-previous{
     left: 0;
-    bottom: 0;
+    top: 45%;
 }
 
 .carousel-next, .carousel-previous{
     position: absolute;
     display: block;
+    z-index: 998;
+    display: flex;
 }
 
 .carousel-next i , .carousel-previous i{
@@ -42,11 +44,10 @@
 
 .carousel-next{
     right: 0;
-    bottom: 0;
+    top: 45%;
 }
 
 .carousel-image-container{
-    position: absolute;
     width: 100%;
 }
 
