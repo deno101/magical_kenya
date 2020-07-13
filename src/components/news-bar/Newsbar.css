@@ -1,0 +1,33 @@
+.m-news-bar{
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    background: black;
+    color: white;
+}
+.m-news-bar a{
+    color: white;
+    transition: opacity 100ms linear 0ms;
+}
+
+.m-news-bar a:hover{
+    text-decoration: none;
+    opacity: .6;
+}
+
+.m-news-links{
+    position: absolute;
+    margin-top: 50px;
+    transition: margin 500ms linear 0ms, visibility 200ms linear 0ms;
+    visibility: hidden;
+    font-size: 18px;
+}
+
+.m-news-title{
+    background-color: red;
+    font-size: 18px;
+}
+
+.m-news-link-container{
+   margin-top: 15px; 
+}

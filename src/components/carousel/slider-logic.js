@@ -11,10 +11,7 @@ export function setTimer() {
 
     function slide() {
         let nextindex = currentslideindex + 1;
-        if (nextindex >= numofSlides) {
-            nextindex = 0
-        }
-
+        (nextindex >= numofSlides) && (nextindex = 0);
         slides[currentslideindex].style.opacity = '0';
         slides[nextindex].style.opacity = '1';
 
