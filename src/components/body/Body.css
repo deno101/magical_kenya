@@ -1,0 +1,124 @@
+.main-body-container {
+    display       : flex;
+    flex-direction: row;
+    flex-wrap     : wrap;
+    width: 70%;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.main-body-container h1,
+.main-body-container p {
+    width: 100%;
+}
+
+.main-body-subcontent {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-body-subcontent img {
+    max-width: 100%;
+}
+
+iframe{
+    width: 100%;
+}
+
+.body-footer {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    color         : white;
+    cursor        : pointer;
+    transition: background 400ms linear 0ms;
+}
+
+.body-footer:hover {
+    background: #292929 !important;
+}
+.body-footer{
+    width: 100%;
+}
+
+.body-side-bar{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.body-side-bar img{
+    max-width: 100%;
+}
+
+.body-super-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body-header{
+    font-weight: 900;
+}
+
+
+@media (max-width: 991px){
+    .main-body-container{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .body-side-bar{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+    .body-side-bar a{
+        width: 50%;
+        padding: 20px;
+    }
+    .body-side-bar iframe{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 578px){
+
+    .body-side-bar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .body-side-bar a{
+        width: 80%;
+        padding: 20px;
+    }
+    .body-side-bar iframe{
+        width: 80%;
+        height: 33%;
+        padding: 20px;
+    }
+
+    .main-body-subcontent{
+        width: 100%;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-footer{
+        width: 100%;
+    }
+
+}
+

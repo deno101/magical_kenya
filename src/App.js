@@ -8,6 +8,7 @@ import Navbar from './components/navbar/Navbar';
 import 'font-awesome/css/font-awesome.min.css'
 import Carousel from './components/carousel/Carousel';
 import { Newsbar , animateNews} from './components/news-bar/Newsbar';
+import Body from './components/body/Body';
 
 class App extends Component {
   render() {
@@ -21,6 +22,8 @@ class App extends Component {
 
         {/* news bar */}
         <Newsbar />
+
+        <Body />
       </div>
     );
   }
