@@ -3,7 +3,7 @@ import './Footer.css'
 import logo from '../../imgs/ktblogo.png'
 
 export default class Footer extends PureComponent {
-    
+
     data = [
         {
             title: 'Links', children: [
@@ -66,13 +66,13 @@ export default class Footer extends PureComponent {
                         <div key={index} className="footer-col m-2">
                             <span className="m-border-bottom pt-2 pb-2  mb-2">{column.title}</span><br />
                             {column.children.map((child, i) => (
-                                <a href={child.href} className="mb-1">{child.name}</a>
+                                <a href={child.href} className="mb-1" key={`child-${i}`}>{child.name}</a>
                             ))}
                         </div>
                     ))}
                 </div>
 
-                <div className="copyright-container m-top-margin-1 mt-2">
+                <div className="copyright-container m-top-margin-1 mt-2 mb-4">
                     <span className="mt-2">
                         Copyright &copy; 2014. Kenya Tourism Board. All Rights Reserved. | Magical Kenya. The Official Destination Website for Kenya.
                     </span>

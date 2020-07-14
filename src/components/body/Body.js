@@ -66,7 +66,7 @@ function MainBody() {
 function BodySideBar() {
     return (
         <React.Fragment>
-            <iframe title="Magical Kenya" src="https://www.youtube... iiyh.com/embed/56AdQWoC7QI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+            <iframe title="Magical Kenya" src="https://www.youtube.com/embed/56AdQWoC7QI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
             <a href="http://magicalkenya.com/mksc" target="_blank" rel="noopener noreferrer">
                 <img src={img_four} alt="MKSC"/>
             </a>

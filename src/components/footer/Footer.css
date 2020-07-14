@@ -60,3 +60,10 @@
     align-self: center;
     text-align: center;
 }
+
+@media (max-width: 575px){
+    .footer-col-container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
