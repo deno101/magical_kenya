@@ -7,8 +7,9 @@ import 'popper.js/dist/popper.min.js'
 import Navbar from './components/navbar/Navbar';
 import 'font-awesome/css/font-awesome.min.css'
 import Carousel from './components/carousel/Carousel';
-import { Newsbar , animateNews} from './components/news-bar/Newsbar';
+import { Newsbar, animateNews } from './components/news-bar/Newsbar';
 import Body from './components/body/Body';
+import Footer from './components/footer/Footer';
 
 class App extends Component {
   render() {
@@ -24,11 +25,13 @@ class App extends Component {
         <Newsbar />
 
         <Body />
+
+        <Footer />
       </div>
     );
   }
 
-  componentDidMount(){
+  componentDidMount() {
     // DOM manipulation js
     animateNews();
   }
