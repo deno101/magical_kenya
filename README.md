@@ -1,3 +1,13 @@
+# Magical Kenya
+
+This is a rect project that replicates [www.magicalkenya.com](https://magicalkenya.com/). Technologies learnt through this
+project React(components) ,Bootstrap,and jquery.
+
+
+<img src="https://github.com/deno101/magical_kenya/blob/master/Screenshot_1.png">
+<img src="https://github.com/deno101/magical_kenya/blob/master/Screenshot_2.png">
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
